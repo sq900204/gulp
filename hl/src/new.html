@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+<meta name="format-detection" content="telephone=no, email=no" />
+<title>华龙区公众平台</title>
+<link rel="stylesheet" href="css/normalize.min.css">
+<link rel="stylesheet" href="css/index.min.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css"> -->
+<link rel="stylesheet" href="css/swiper.min.css">
+<link rel="stylesheet" href="css/activity.min.css">
+</head>
+<body>
+    <div class="new-wrapper">
+        <!-- 标题 -->
+        <div class="title">
+            <input type="text" placeholder="请输入标题，16字以内。">
+            <span class="txt-tip">
+                <em>16</em>/16
+            </span>
+        </div>
+        <!-- 内容 -->
+        <div class="content">
+            <textarea name="" id="" cols="30" rows="3"  placeholder="请输入内容，50字以内。"></textarea>
+            <span class="txt-tip">
+                <em>50</em>/50
+            </span>
+        </div>
+        <!-- 上传 -->
+        <div class="upload-div">
+            <ul class="clearfix">
+                <li class="fl add-li">
+                    <div class="add-btn">
+                        <input type="file" class="file" id="file" >
+                    </div>
+                </li>
+            </ul>
+            
+            
+        </div>
+        <!-- 发布按钮 -->
+        <div class="btn">发布</div>
+        <!-- 返回 -->
+        <a class="grey-back" href=""></a>
+    </div> 
+    
+    <!-- 敬请期待 -->
+    <div class="toast toast-new"  >暂未开放,敬请期待</div>
+
+    <!-- 预览图片 -->
+    <div class="swiper-pop">
+        <span class="close">返回</span>
+        <div class="page">
+            <span class="index">1</span>
+            <span class="total"></span>
+        </div>
+        <div class="swiper-container">
+                <div class="swiper-wrapper">
+                
+                </div>
+            </div>
+    </div>
+    <!-- video弹框 -->
+    <div class="video-pop" >
+         <span class="close">返回</span>
+        <video src="" id="pop-video" controls="controls" style="width:100%;max-height:90%;" x5-playsinline="true" webkit-playsinline="true" playsinline></video>
+    </div>
+    <!-- 删除确认弹框 -->
+    <div class="pop">
+        <div class="pop-box">
+            <div  class="header">
+                删除确认
+                <span class="close"></span>
+            </div>
+            <div class="content">
+                <p>确定删除？</p> 
+            </div>
+            <div class="footer clearfix">
+                <span class="pop-btn cancel fl">我再想想</span>
+                <span class="pop-btn confirm fl">确定</span>
+            </div>
+        </div>
+    </div>
+    <!-- loading -->
+    <div class="pop loading release" style="display:none">
+        <img class="loading-img" src="img/release.png" alt="">
+    </div>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/flexible.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script> -->
+  <script type="text/javascript" src="js/swiper.min.js"></script>
+  <script type="text/javascript" src="js/index.min.js"></script>
+  <script type="text/javascript" src="js/new.min.js"></script>
+
+</body>
+</html>

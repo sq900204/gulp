@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+<meta name="format-detection" content="telephone=no, email=no" />
+<title>我的发布</title>
+<link rel="stylesheet" href="css/normalize.min.css">
+<link rel="stylesheet" href="css/index.min.css">
+<link rel="stylesheet" href="css/activity.min.css">
+<link rel="stylesheet" href="css/rank.min.css">
+</head>
+<body>
+    
+    <div id="box" style="position:relative;margin-top:10px;margin-top:20px">
+        <div id="test1" style="position:absolute;top:20px;left:10px;">元素一</div>
+        <div id="test2" style="position:fixed;">元素二</div>
+    </div>
+    
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+
+  <script>
+    console.log($('#test1').position().top,$('#test1').position().left);//0 0 
+console.log($('#test2').position().top,$('#test2').position().left);//8 8 
+    </script>
+
+
+</body>
+</html>

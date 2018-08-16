@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+<meta name="format-detection" content="telephone=no, email=no" />
+<title>华龙区公众平台</title>
+<link rel="stylesheet" href="css/normalize.min.css">
+<link rel="stylesheet" href="css/index.min.css">
+<link rel="stylesheet" href="css/activity.min.css">
+<script type="text/javascript" src="js/flexible.min.js"></script>
+</head>
+<body style="background:#fff">
+    <div class="detail-wrapper">
+        <!-- 留言 -->
+        <div class="add-comment">
+            <textarea name="" id="" cols="30"  class="comment-textarea" placeholder="写留言"></textarea>
+            <span class="comment-btn">留言</span>
+        </div>
+        <!-- 留言列表 -->
+        <div class="comment-list">
+            <ul>
+                <li class="clearfix">
+                    <!-- 用户头像 -->
+                    <img class="user-icon fl" src="img/my-icon.png" alt="">
+                    <div class="comment-right fl">
+                        <!-- 用户昵称 -->
+                        <p class="nickname">李文星</p>
+                        <!-- 评论内容 -->
+                        <p class="comment-content">
+                                少年强则中国强！为90后共产党员点赞！
+                        </p>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <!-- 用户头像 -->
+                    <img class="user-icon fl" src="img/my-icon.png" alt="">
+                    <div class="comment-right fl">
+                        <!-- 用户昵称 -->
+                        <p class="nickname">李文星</p>
+                        <!-- 评论内容 -->
+                        <p class="comment-content">
+                                少年强则中国强！为90后共产党员点赞！少年强则中国强！为90后共产党员点赞！少年强则中国强！为90后共产党员点赞！
+                        </p>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- 加载更多 -->
+            <p class="loading-more">加载更多</p>
+        </div>
+    </div>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/index.min.js"></script>
+
+  <script type ="text/javascript">
+   var win_height =  $(window).height() , doc_height = $(document).height()
+    // 加载更多
+  function loadMore(){
+      var isEnd = false
+      // 如果是最后一页
+      if(isEnd == true){
+          $(".loading-more").text("没有更多了")
+      }else{
+          var html = '<li class="clearfix">'+
+                '<!-- 用户头像 -->'+
+                    '<img class="user-icon fl" src="img/my-icon.png" alt="">'+
+                    '<div class="comment-right fl">'+
+                        '<!-- 用户昵称 -->'+
+                        ' <p class="nickname">李文星</p>'+
+                        ' <!-- 评论内容 -->'+
+                        '<p class="comment-content"> 少年强则中国强！为90后共产党员点赞！ </p>'+
+                    ' </div>'+
+                    '</li>'
+          $(".comment-list ul").append(html)
+       }
+      
+  }
+  // 加载更多
+  $(window).scroll(function(){
+     var scroll_top =  $(document).scrollTop()
+     if(win_height + scroll_top >= $(document).height() ){
+         setTimeout(function(){
+              loadMore()
+         },1000)
+     }
+  })
+</script>
+</body>
+</html>
